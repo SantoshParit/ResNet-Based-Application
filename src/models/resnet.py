@@ -1,4 +1,3 @@
-import torch
 from torch import nn
 
 class Block(nn.Module):
@@ -81,8 +80,3 @@ class ResNet_18(nn.Module):
             nn.BatchNorm2d(out_channels)
         )
     
-
-input = torch.rand(1, 3 ,112 , 112)
-model = ResNet_18(10)
-
-x = model(input)
